@@ -1,0 +1,139 @@
+.navbar{
+    
+     display: flex;
+     flex-direction: row;
+     font-size: 1.4rem;
+     padding: 0 2rem;
+     flex-wrap: wrap;
+     position: sticky;
+     top: 0;
+     z-index: 20;
+     justify-content: flex-end;
+     justify-content: space-between;
+     background-color: #F2B872;
+
+
+
+}
+
+.logo{
+    
+}
+
+.navbar__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     
+     
+}
+
+.navbar__item{
+    padding: 0 2rem;
+}
+
+/* .active-link{
+    text-decoration: underline;
+    color: white;
+} */
+
+.navbar__item:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+    
+
+}
+
+.navbar__item:hover:after{
+    width: 100%;
+    background: slateblue;
+}
+.navbar__item .active-link{
+    color: slateblue;
+  
+    padding: 10px;
+    
+}
+
+.nav-icon{
+    padding-top: 20px;
+    font-size: 30px;
+    display: none;
+}
+.navbar #hidden{
+    display: flex;
+}
+@media screen and (max-width: 760px) {
+
+    /* ul */
+    .navbar__links{
+        /* display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid white;
+        top: 80px;
+        left: -110%;
+        position: absolute;
+        opacity: 1; */
+        display: none;
+        transition: all 10s ease-out;
+        
+
+
+    }
+    .navbar #hidden{
+         position: absolute;
+         left: 0;
+         top: 90px;
+         height:100vh;
+         margin: 0px;
+         padding: 0px;
+         width: 100%;
+         background-color: #F2B872;;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         /* transition: all 10s ease-out; */
+         align-items: center;
+    }
+
+    .navbar__links .active-link{
+    
+        display: flex;
+
+    }
+
+    /* Li */
+    .navbar__item{
+        width: 150px;
+         
+        padding: 4rem;
+        font-size: 2rem;
+    }
+   
+
+   
+
+    .navbar__item::after{
+        content: "";
+        display: block;
+
+
+    }
+
+    .nav-icon{
+        display: flex;
+        cursor: pointer;
+        transition: all .8s ease;
+    }
+
+
+
+
+    
+}

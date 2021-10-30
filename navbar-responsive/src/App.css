@@ -1,0 +1,29 @@
+*{
+   
+  font-family: 'Noto Serif', serif;
+ 
+  /* background-image: url('./images/Web\ 1920\ –\ 1.png'); */
+}
+.App {
+  list-style: none;
+ 
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #732002;
+}
+h1{
+  text-align: center;
+}
+body{
+  height: 100vh;
+}
+
+
+/*adob color  */
